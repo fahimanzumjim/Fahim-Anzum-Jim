@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of a Django Developer from Bangladesh">
+    <meta name="theme-color" content="#ff004f">
+    <title>MY Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav >
+            <img src="./image/logo1.png" alt="MY Portfolio Logo" class="logo">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+      <div class="header-text">
+    <p>Strategic HR Business Partner</p>
+    <h1>Hi, I'm <span>Md. Fahim Anzum Jim</span></h1>
+    <h2>Talent Management <br>& Workforce Optimization Specialist</h2>
+    
+</div>
+    </div>
+</div>
+<!--about section-->
+<div id="about">
+    <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img id="profileImage" src="images/jim1.png" alt="User Image">
+        </div>
+        <div class="about-col-2">
+            <h1 class="subtittle">About Me</h1>
+            <p>
+  I am an experienced HR professional with over 7 years of expertise in strategic HR business partnering, talent management, and workforce optimization. Currently working as a Deputy Manager (HRBP) at Walton, I focus on improving organizational performance through effective manpower planning, HR analytics, and employee development. I am passionate about building high-performance teams, implementing efficient HR systems, and aligning people strategies with business goals.   
+            </p>
+          
+        <div class="tab-title">
+            <p class ="tab-link active-link" onclick="openTab('skills')">Skills</p>
+             <p class ="tab-link" onclick="openTab('experience')">Experience</p>
+        </div>
+        <div class="tab-content active-tab" id="skills">
+            <ul>
+             <li><span>Strategic HR</span><br>Strategic HR Business Partnering, HR Policy Formulation</li>
+
+<li><span>Talent Management</span><br>Talent Development, Succession Planning, Training Needs Analysis</li>
+
+<li><span>Workforce Management</span><br>Workforce Planning, Manpower Optimization, Recruitment & Selection</li>
+
+<li><span>HR Operations</span><br>Performance Appraisal Systems, Payroll Management</li>
+
+<li><span>Compensation & Benefits</span><br>Compensation Analysis, Incentive Structure Management</li>
+
+<li><span>HR Systems</span><br>HRIS Implementation, HR Metrics & Data Analytics</li>
+
+<li><span>Employee Relations</span><br>Employee Engagement, Organizational Culture Development</li>
+
+<li><span>Process Improvement</span><br>Six Sigma, Operational Efficiency</li>
+
+
+
+<li><span>Soft Skills</span><br>Communication, Leadership, Negotiation, Problem Solving</li>
+            </ul>
+        </div>
+        <div class="tab-content" id="experience">
+            <ul>
+               <li>
+<span>Deputy Manager, HRBP In-Charge</span><br>
+Walton | Nov 2021 – Present<br>
+Leading strategic manpower planning, talent management, HRIS reporting, performance appraisal cycles, and employee engagement initiatives while supporting organizational development and HR policy compliance.
+</li>
+
+<li>
+<span>HR Officer</span><br>
+Beacon Group | Aug 2019 – Nov 2021<br>
+Established the Employee Relations wing, implemented performance appraisal systems, automated reporting processes, and supported HR operations and employee relations management.
+</li>
+
+<li>
+<span>Executive</span><br>
+Munna Plastic | Feb 2016 – Nov 2017<br>
+Managed business development initiatives, expanded B2B client base, introduced new product lines, and developed operational systems to support business growth.
+</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--Projects section-->
+<div id="projects">
+    <div class="container">
+        <h1 class="subtittle">Projects</h1>
+        <div class="row">
+            <div class="project-col">
+                <img src="images/work1.png" alt="Project 1">
+                <div class="layer">
+                    <h3>HRIS Dashboard System</h3>
+                    <p>Designed HR metric–driven dashboards to monitor and report monthly HR performance.  .</p>
+                </div>
+            </div>
+
+            <div class="project-col">
+                <img src="images/work4.png" alt="Project 2">
+                <div class="layer">
+                    <h3>Workforce Optimization</h3>
+                    <p>Developed standard manpower frameworks and provided strategic recommendations for workforce planning and execution.</p>
+                </div>
+            </div>
+
+            <div class="project-col">
+                <img src="images/work2.png" alt="Project 3">
+                <div class="layer">
+                    <h3>Succession Planning</h3>
+                    <p>Leadership development initiative to prepare employees for management roles.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Contact section-->
+<div id="Contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="subtittle">Contact Me</h1>
+                <p><i class="fas fa-envelope"></i>	fahim.anzum.jim@gmail.com</p>
+                <p><i class="fas fa-phone"></i> +8801749-827744</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/md-fahim-anjum-jim-2026-"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="cv.docx" download="Fahim_Anzum_Jim_CV.docx" class="hero-btn red-btn" style="margin-top: 20px; display: inline-block;">
+                    <i class="fas fa-download"></i> Download CV
+                </a>
+            </div> 
+          
+        </div>
+    </div>
+</div>
+
+<script>
+    var tabLinks = document.getElementsByClassName("tab-link");
+    var tabContents = document.getElementsByClassName("tab-content");
+    function openTab(tabname){
+        for(tabLink of tabLinks){
+            tabLink.classList.remove("active-link");
+        }
+        for(tabContent of tabContents){
+            tabContent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+    // Auto-change profile image every 3 seconds with animation
+    var images = ['images/jim1.png', 'images/jim2.png', 'images/jim4.png'];
+    var currentIndex = 0;
+    var profileImage = document.getElementById('profileImage');
+    
+    function changeImage() {
+        currentIndex = (currentIndex + 1) % images.length;
+        
+        // Remove animation class
+        profileImage.classList.remove('slide-in');
+        
+        // Trigger reflow to restart animation
+        void profileImage.offsetWidth;
+        
+        // Change image and add animation class
+        profileImage.src = images[currentIndex];
+        profileImage.classList.add('slide-in');
+    }
+    
+    // Initial animation
+    profileImage.classList.add('slide-in');
+    
+    // Change image every 3 seconds
+    setInterval(changeImage, 3000);
+
+</script>
+</body>
+</html>    

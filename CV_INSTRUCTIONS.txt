@@ -1,0 +1,31 @@
+CV DOWNLOAD BUTTON - SETUP INSTRUCTIONS
+==========================================
+
+A "Download CV" button has been added to your portfolio in two locations:
+1. About section (below the about me paragraph)
+2. Contact section (below social icons)
+
+IMPORTANT: You need to add your CV file!
+----------------------------------------
+
+The button is currently configured to download a file named "CV.pdf"
+
+To make it work:
+1. Save your CV/Resume as a PDF file
+2. Name it "CV.pdf"
+3. Place it in the root directory: d:\Course\myPortfolio - Copy\CV.pdf
+   (Same folder as index.html)
+
+Alternatively, if you want to use a different filename:
+- Open index.html
+- Find the two download buttons (search for "Download CV")
+- Change href="CV.pdf" to href="YourFileName.pdf"
+- Change download="Fahim_Anzum_Jim_CV.pdf" to your preferred download name
+
+Button Features:
+- Font Awesome download icon
+- Styled with red theme matching your portfolio
+- Hover effects for better UX
+- Works on mobile and desktop
+
+Once you add the CV.pdf file, the button will automatically download it when clicked!
